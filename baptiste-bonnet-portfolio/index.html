@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portfolio de Baptiste Bonnet : Data Science, Machine Learning, MLOps et fiabilité des systèmes d'IA.">
+  <meta name="theme-color" content="#07111f">
+  <title>Baptiste Bonnet — Data Scientist · ML · MLOps</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#contenu">Aller au contenu</a>
+  <header class="site-header" data-header>
+    <div class="nav-shell">
+      <a class="brand" href="#accueil" aria-label="Retour à l'accueil"><span class="brand-mark" aria-hidden="true">BB</span><span>Baptiste Bonnet</span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="navigation" data-menu-toggle><span class="sr-only">Ouvrir le menu</span><span aria-hidden="true"></span><span aria-hidden="true"></span></button>
+      <nav id="navigation" class="main-nav" aria-label="Navigation principale" data-menu><a href="#projets">Projets</a><a href="#competences">Compétences</a><a href="#parcours">Parcours</a><a href="#contact">Contact</a></nav>
+    </div>
+  </header>
+
+  <main id="contenu">
+    <section class="hero" id="accueil" aria-labelledby="hero-title">
+      <div class="hero-grid page-shell">
+        <div class="hero-copy reveal">
+          <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> Data Scientist · Machine Learning · MLOps</p>
+          <h1 id="hero-title">Des modèles utiles.<br><span>Des systèmes fiables.</span></h1>
+          <p class="hero-lead">Je transforme des données en systèmes de décision mesurables, déployables et honnêtes sur leurs limites.</p>
+          <div class="hero-actions"><a class="button button-primary" href="#agritrust">Découvrir AgriTrust <span aria-hidden="true">↘</span></a><a class="button button-secondary" href="https://github.com/baptiste-bonnet" target="_blank" rel="noreferrer">Voir mon GitHub <span aria-hidden="true">↗</span></a></div>
+          <ul class="hero-tags" aria-label="Domaines de compétence"><li>Python</li><li>Data Science</li><li>MLOps</li><li>IA fiable</li></ul>
+        </div>
+        <div class="system-card reveal" aria-label="Cycle de vie d'un système de Machine Learning">
+          <div class="system-topline"><span>SYSTÈME ML</span><span class="live-label">● opérationnel</span></div>
+          <div class="pipeline" aria-hidden="true">
+            <div class="pipeline-node"><span>01</span><strong>DATA</strong><small>qualifier</small></div><div class="pipeline-line"></div>
+            <div class="pipeline-node"><span>02</span><strong>MODEL</strong><small>évaluer</small></div><div class="pipeline-line"></div>
+            <div class="pipeline-node"><span>03</span><strong>API</strong><small>déployer</small></div><div class="pipeline-line"></div>
+            <div class="pipeline-node accent-node"><span>04</span><strong>MONITOR</strong><small>fiabiliser</small></div>
+          </div>
+          <div class="signal-panel"><div><span>PRINCIPE</span><strong>La performance ne suffit pas.</strong></div><svg viewBox="0 0 220 58" role="img" aria-label="Courbe symbolisant le suivi d'une métrique"><path class="grid-line" d="M0 48H220M0 29H220M0 10H220"/><path class="signal-line" d="M0 43 C20 39,29 43,44 31 S72 24,88 29 S118 38,134 19 S165 11,178 20 S203 17,220 8"/></svg></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-projects" id="projets" aria-labelledby="projects-title">
+      <div class="page-shell">
+        <div class="section-heading reveal"><div><p class="section-index">01 / PROJETS SÉLECTIONNÉS</p><h2 id="projects-title">Quatre projets,<br>un profil transversal.</h2></div><p>Analyse, modélisation, industrialisation et recul critique. Chaque projet apporte une preuve différente, sans transformer le portfolio en catalogue.</p></div>
+
+        <article class="featured-project reveal" id="agritrust">
+          <div class="featured-main">
+            <div class="project-kicker"><span>PROJET PHARE</span><span>2026</span></div>
+            <h3>AgriTrust</h3>
+            <p class="project-subtitle">Audit de fiabilité d’un système de recommandation agricole</p>
+            <p class="project-summary">Un audit de bout en bout d’un produit ML existant : besoin métier, qualité prédictive, comportement par sous-groupes, pertinence du classement et décision de mise en production.</p>
+            <div class="decision-strip" aria-label="Conclusion de l'audit"><div><span class="go">GO LIMITÉ</span><strong>Prédiction de rendement</strong></div><div><span class="no-go">NO-GO</span><strong>Recommandation autonome</strong></div></div>
+            <div class="project-actions"><a class="button button-light" href="https://github.com/baptiste-bonnet/agritrust-portfolio" target="_blank" rel="noreferrer">Code & documentation <span aria-hidden="true">↗</span></a><a class="text-link" href="assets/AgriTrust_Rapport_Audit_OC.pdf" target="_blank">Lire le rapport PDF <span aria-hidden="true">↗</span></a></div>
+          </div>
+          <div class="featured-evidence">
+            <div class="metric-grid"><div class="metric"><strong>0,913</strong><span>R² sur le jeu de test</span></div><div class="metric"><strong>0,498</strong><span>RMSE · t/ha</span></div><div class="metric"><strong>99 975</strong><span>observations testées</span></div><div class="metric"><strong>17</strong><span>tests automatisés</span></div></div>
+            <figure class="audit-figure"><img src="assets/decision-gap-vs-error.png" alt="Comparaison entre l'écart de classement des cultures et l'erreur prédictive du modèle AgriTrust" loading="lazy"><figcaption>Le classement varie moins que l’erreur du modèle : une alerte métier que la seule métrique globale ne montrait pas.</figcaption></figure>
+          </div>
+        </article>
+
+        <div class="project-grid">
+          <article class="project-card reveal"><div class="card-number">02</div><p class="project-domain">ML ENGINEERING · MONITORING</p><h3>Credit Scoring en production</h3><p>Exposition et supervision d’un modèle LightGBM avec API FastAPI, Docker, CI/CD, interface Gradio et tableau de monitoring.</p><ul class="proof-list"><li>Tests automatisés et GitHub Actions</li><li>Analyse du drift et logs structurés</li><li>Conversion ONNX validée</li></ul><p class="result-line"><span>Résultat</span> Inférence mesurée autour de 0,03 à 0,05 ms</p><div class="tech-row"><span>LightGBM</span><span>FastAPI</span><span>Docker</span><span>ONNX</span></div></article>
+          <article class="project-card reveal"><div class="card-number">03</div><p class="project-domain">GENAI · ÉVALUATION</p><h3>Système RAG & évaluation LLM</h3><p>Assistant de questions-réponses sur des données NBA, combinant recherche vectorielle, routage structuré et interrogation SQL.</p><ul class="proof-list"><li>Architecture hybride FAISS + SQLite</li><li>Traçabilité avec Pydantic et Logfire</li><li>Protocole de 20 questions avec RAGAS</li></ul><p class="result-line"><span>Apport</span> Séparer qualité de récupération et qualité de génération</p><div class="tech-row"><span>Mistral</span><span>FAISS</span><span>RAGAS</span><span>SQL</span></div></article>
+          <article class="project-card reveal"><div class="card-number">04</div><p class="project-domain">DATA ANALYSIS · ML</p><h3>Consommation énergétique</h3><p>Prévision de la consommation de bâtiments non résidentiels à Seattle et analyse des facteurs associés.</p><ul class="proof-list"><li>Exploration et préparation de 1 456 bâtiments</li><li>Comparaison de modèles de régression</li><li>Interprétation des variables importantes</li></ul><p class="result-line"><span>Modèle</span> Random Forest · R² ≈ 0,72 · MAE ≈ 3,39 M kBtu</p><div class="tech-row"><span>pandas</span><span>scikit-learn</span><span>Seaborn</span><span>SHAP</span></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-skills" id="competences" aria-labelledby="skills-title">
+      <div class="page-shell">
+        <div class="section-heading light-heading reveal"><div><p class="section-index">02 / COMPÉTENCES</p><h2 id="skills-title">Du notebook<br>au système suivi.</h2></div><p>Une autoévaluation fondée sur des réalisations concrètes. L’échelle distingue la pratique guidée, la mise en œuvre sur projet et l’autonomie.</p></div>
+        <div class="skill-layout">
+          <div class="skill-bars reveal" aria-label="Niveaux de compétences autoévalués">
+            <div class="skill-item"><div><strong>Python & analyse de données</strong><span>Autonome</span></div><div class="level" aria-label="Niveau 3 sur 4"><i></i><i></i><i></i><i class="off"></i></div></div>
+            <div class="skill-item"><div><strong>Machine Learning</strong><span>Autonome sur projet</span></div><div class="level" aria-label="Niveau 3 sur 4"><i></i><i></i><i></i><i class="off"></i></div></div>
+            <div class="skill-item"><div><strong>MLOps & déploiement</strong><span>Autonome sur prototype</span></div><div class="level" aria-label="Niveau 3 sur 4"><i></i><i></i><i></i><i class="off"></i></div></div>
+            <div class="skill-item"><div><strong>RAG & LLM</strong><span>Mis en œuvre</span></div><div class="level" aria-label="Niveau 2 sur 4"><i></i><i></i><i class="off"></i><i class="off"></i></div></div>
+            <div class="skill-item"><div><strong>Fiabilité & monitoring ML</strong><span>En approfondissement</span></div><div class="level" aria-label="Niveau 2 sur 4"><i></i><i></i><i class="off"></i><i class="off"></i></div></div>
+          </div>
+          <div class="capability-grid reveal"><div><span>ANALYSER</span><p>EDA, qualité des données, SQL, visualisation, cadrage métier.</p></div><div><span>MODÉLISER</span><p>Régression, classification, feature engineering, optimisation, interprétation.</p></div><div><span>INDUSTRIALISER</span><p>FastAPI, Docker, MLflow, tests, CI/CD, versioning et monitoring.</p></div><div><span>QUESTIONNER</span><p>Analyse d’erreurs, drift, limites, explicabilité et garde-fous humains.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-map" id="parcours" aria-labelledby="map-title">
+      <div class="page-shell map-grid">
+        <div class="map-copy reveal"><p class="section-index">03 / PARCOURS & RÉFLEXIVITÉ</p><h2 id="map-title">Une progression visible, pas seulement une liste d’outils.</h2><p>La formation m’a fait évoluer d’une lecture centrée sur le modèle vers une vision plus complète du métier : comprendre le besoin, construire une preuve mesurable, déployer, surveiller et savoir dire quand le système ne doit pas décider seul.</p><div class="reflection-grid"><div><strong>Avant</strong><span>Optimiser d’abord la métrique du modèle.</span></div><div><strong>Aujourd’hui</strong><span>Relier données, décision, exploitation et risques.</span></div><div><strong>Prochaine étape</strong><span>Approfondir robustesse, incertitude et systèmes human-in-the-loop.</span></div></div><a class="button button-dark" href="assets/Carte_Conceptuelle_Parcours_DS.pdf" target="_blank">Ouvrir la carte complète <span aria-hidden="true">↗</span></a></div>
+        <figure class="map-figure reveal"><a href="assets/Carte_Conceptuelle_Parcours_DS.pdf" target="_blank" aria-label="Ouvrir la carte conceptuelle complète en PDF"><img src="assets/carte-conceptuelle.png" alt="Carte conceptuelle du parcours Data Scientist de Baptiste Bonnet" loading="lazy"></a><figcaption>Carte conceptuelle — projets, compétences, soft skills et axes d’amélioration.</figcaption></figure>
+      </div>
+    </section>
+
+    <section class="section section-research" aria-labelledby="research-title"><div class="page-shell research-grid"><div class="research-label reveal"><span>AXE D’APPROFONDISSEMENT</span></div><div class="reveal"><h2 id="research-title">Fiabilité des systèmes d’intelligence artificielle</h2><p>Mon fil directeur : comprendre quand un système peut être utilisé, quand il faut l’encadrer et comment documenter ses limites. AgriTrust en est une première mise en pratique appliquée.</p><ul class="research-topics" aria-label="Perspectives d'approfondissement"><li>Détection de dérive</li><li>Incertitude & calibration</li><li>Robustesse hors distribution</li><li>Human-in-the-loop</li></ul></div></div></section>
+
+    <section class="section section-contact" id="contact" aria-labelledby="contact-title"><div class="page-shell contact-inner reveal"><p class="section-index">04 / CONTACT</p><h2 id="contact-title">Construisons quelque chose<br><span>d’utile et mesurable.</span></h2><p>Opportunité Data, Machine Learning, MLOps, mission freelance ou échange autour de la fiabilité de l’IA.</p><a class="button button-primary" href="https://github.com/baptiste-bonnet" target="_blank" rel="noreferrer">Me contacter via GitHub <span aria-hidden="true">↗</span></a></div></section>
+  </main>
+
+  <footer class="site-footer"><div class="page-shell"><span>© <span data-year>2026</span> Baptiste Bonnet</span><span>Conçu avec exigence, documenté avec transparence.</span></div></footer>
+  <script src="script.js"></script>
+</body>
+</html>
